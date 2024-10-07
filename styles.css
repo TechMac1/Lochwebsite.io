@@ -1,0 +1,788 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* social media  */
+
+.social-icons {
+    margin-left: auto; /* Push icons to the far right */
+    
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: solid;
+    font-size: 20px;
+    margin-left: 15px;
+    background-color: #918e8e; /* Background color for the circle */
+    padding: 10px;
+    border-radius: 100%; /* Make it a circle */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #007bff; /* Change background color on hover */
+    color: #fff;
+}
+/* Galleries Section */
+.galleries {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px; /* Spacing between gallery cards */
+}
+
+/* Individual Gallery Card */
+.gallery {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Set fixed width for uniformity */
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.gallery:hover {
+    transform: scale(1.05);
+}
+
+/* Main Image */
+.gallery__image-thumbnail img {
+    width: 100%;
+    height: 200px; /* Set a fixed height to control the image size */
+    object-fit: cover; /* This will maintain the aspect ratio and crop the image if necessary */
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* Thumbnails Row */
+.gallery__thumbnails {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.gallery__thumbnails div {
+    width: 80px; /* Slightly larger width for the thumbnails */
+    height: 80px; /* Same height for thumbnails */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.gallery__thumbnails div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image fills the thumbnail without distortion */
+    transition: transform 0.3s ease;
+}
+
+.gallery__thumbnails div:hover img {
+    transform: scale(1.1); /* Slight zoom on hover for interaction */
+}
+
+/* Gallery Info Styling */
+.gallery__info {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery__info p {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.gallery__info small {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.gallery__info small i {
+    margin-right: 5px;
+    font-size: 14px; /* Icon size */
+}
+
+
+
+/* Video Container Styling */
+.video-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.video-container h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    
+}
+
+.youtube-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.youtube-box iframe {
+    border-radius: 12px;
+    width: 100%;
+    max-width: 560px; /* Limit the width for larger screens */
+    height: 315px;
+}
+
+.youtube-box:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+@media (max-width: 768px) {
+    .youtube-box iframe {
+        width: 100%;
+        height: auto; /* Adjust height for smaller screens */
+    }
+}
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.navbar ul li a:hover {
+    color: #f4f4f4;
+    transition: color 0.3s ease;
+}
+h1{
+    padding-top: 50px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    padding-top: 20px;
+}
+/* Banner Styling */
+.banner {
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-top: 42px;
+}
+
+/* Intro and Mission Section */
+.intro-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.intro, .mission {
+    margin-bottom: 50px;
+}
+
+.intro h1,  .mission{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2.5em;
+}
+.intro p, .mission p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.booking-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.booking-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* booking */
+.booking-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.booking-form label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.booking-form select, 
+.booking-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-form button {
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.terms-accept-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.terms-accept-button:hover {
+    background-color: #218838;
+}
+/* privicy and terms  need to be update per year date of creation, 06/10/24 */
+.terms-section {
+    padding: 50px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+}
+
+.terms-section h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.terms-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.terms-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.terms-section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+/* Submit Button (disabled styling) */
+button[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;}
+
+.booking-form button:hover {
+    background-color: #0056b3;
+}
+/* Activities Grid */
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust grid for better responsiveness */
+    gap: 30px; /* Increase gap for cleaner spacing */
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.activity-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for better separation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transitions */
+}
+
+.activity-item img {
+    width: 100%;
+    height: 250px; /* Set consistent height for images */
+    object-fit: cover; /* Ensure image covers the area without distortion */
+    transition: transform 0.3s ease; /* Add hover scaling effect */
+}
+
+.activity-item:hover img {
+    transform: scale(1.1); /* Scale image on hover */
+}
+
+.activity-info {
+    background-color: rgba(0, 0, 0, 0.6); /* Use slightly lighter background for better readability */
+    color: white;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 1em;
+    transition: background-color 0.3s ease color; /* Smooth transition for hover */
+}
+
+.activity-item:hover .activity-info {
+    opacity: 0; /* Make the text and box fully transparent */
+}
+
+.activity-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 0px;
+    color: #fff;
+}
+
+.activity-info p {
+    font-size: 1em;
+    line-height: 2.7;
+}
+.activity-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+/* Initially hide the description */
+.activity-description {
+    opacity: 0;
+    visibility: hidden;
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-top: 0px;
+    border-radius: 5px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+}
+.test2{
+    margin-top: 24px;
+    
+}
+
+/* Show the description on hover */
+.activity-item:hover .activity-description {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .activities-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Make columns more flexible for smaller screens */
+        padding: 20px; /* Reduce padding for smaller devices */
+    }
+
+    .activity-item img {
+        height: 200px; /* Reduce image height for smaller screens */
+    }
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.testimonial {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-size: 2.1em;
+    margin-bottom: 10px;
+}
+
+.star.filled {
+    font-size: 2em;
+    color: gold ;
+    margin-right: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #f4f4f4;
+    transition: color 0.3s ease;
+}
+
+.logo-img{
+position: left;
+width: 200px;
+height: 200px;
+padding-top: 50px;
+}
+/* Team Grid Layout */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 50px;
+    justify-items: center;
+    align-items: center;
+}
+
+.person {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 100%;
+
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.person img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.person h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.person p {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input[type="button"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.contact-form input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: trgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #f4f4f4;
+}
+
+.opentime ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+/* map */
+.map-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.map-container {
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+    padding-left: 80px;
+    border-radius: 10px;
+}
+
+.map-container iframe {
+    border-radius: 10px; /* Optional: round the edges of the map */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow around the map */
+}
+.map-buttons{
+    margin-top: 20px;
+}
+.map-buttons a {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+.apple-maps-btn {
+    background-color: #4285f4; /* Apple Maps buttons are often black or dark-colored */
+}
+
+/* Google Maps Button */
+.google-maps-btn {
+    background-color: #4285f4;}
+
+.address-container{
+    flex: 1;
+    max-width: 300px;
+
+}
+.address{
+    text-align: center;
+    justify-content: right;
+}
+.address h2{
+    padding-bottom: 10px;
+}
+
+/* developer */
+.developer{
+    padding-top: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+/* CTA'S */
+.cta-button {
+    display: inline-block;
+    
+    padding: 5px 20px;
+    background-color: #007bff;
+    color: white;
+    text-transform: uppercase;
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); }
+
+.about-team{
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-around; /* Evenly distributes images with equal spacing */
+    align-items: center; /* Vertically centers images */
+    padding: 20px;
+
+}
+.circle-image {
+        width: 150px; /* Adjust size to your preference */
+        height: 150px; /* Ensure height equals width for a perfect circle */
+        border-radius: 50%; /* Makes the image circular */
+        object-fit: cover; /* Ensures the image fits well within the circle */
+        margin: 0 20px; /* Optional margin between images for additional spacing */
+        border: 3px solid #007bff; /* Optional border for styling */
+    }
+    @media (max-width: 768px) {
+        .about-team {
+            flex-direction: column; /* Stack images vertically on small screens */
+            align-items: center;
+        }
+    
+        .circle-image {
+            margin-bottom: 20px; /* Adds space between stacked images */
+        }
+    }
+
+
+    /* Cookie Consent Bar Styling */
+#cookieConsent {
+    display: none; /* Hidden by default, will be shown with JavaScript */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    z-index: 1000;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cookie-consent-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.cookie-consent-bar p {
+    font-size: 16px;
+    margin: 0;
+    padding-right: 10px;
+}
+
+.cookie-consent-bar a {
+    color: #f4f4f4;
+    text-decoration: underline;
+}
+
+.cookie-consent-bar a:hover {
+    color: #bbb;
+}
+
+.cookie-consent-bar button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cookie-consent-bar button:hover {
+    background-color: #0056b3;
+}

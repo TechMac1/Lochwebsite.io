@@ -1,0 +1,112 @@
+<!DOCTYPE html> 
+
+<html lan="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <head>
+            <title>Lochquarry Outdoor Centre</title>
+            <link rel="stylesheet" href="styles.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        </head>
+
+        <header><div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="imagesfolder.html">Gallery</a></li><li class="social-icons">
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </li>
+            </ul>
+    </div>
+</header>
+
+
+    <body>
+
+        <section class="booking-section">
+            <h2>Booking Form</h2>
+            <form action=".submit-booking" method="post" class="booking-form">
+                <label for="Activity"> Select your first activity:</label>
+                <select name="activity" id="activity">
+                <option value="" disabled selected> Select an activity</option>
+                <option value="climbing">Climbing</option>
+                <option value="abseiling">Abseiling</option>
+                <option value="pole-climbing">Pole Climbing</option>
+                <option value="canoeing">Canoeing</option>
+                <option value="kayaking">Kayaking</option>
+                <option value="Powerboating">Powerboating</option>
+                <option value="Axe Throwing">Axe Throwing</option>
+                <option value="Orienteeringg">Orienteering</option>
+                <option value="Archery">Archery</option>
+                <option value="Hillwalking">Hillwalking</option>
+
+
+                <label for="date">Select a Date:</label>
+                <input type="date" id="date" name="date" required>
+
+            </select>
+            <label for="Activity2"> Select your second activity:</label>
+            <select name="activity" id="activity">
+            <option value="" disabled selected> Select an activity</option>
+            <option value="climbing">Climbing</option>
+            <option value="abseiling">Abseiling</option>
+            <option value="pole-climbing">Pole Climbing</option>
+            <option value="canoeing">Canoeing</option>
+            <option value="kayaking">Kayaking</option>
+            <option value="Powerboating">Powerboating</option>
+            <option value="Axe Throwing">Axe Throwing</option>
+            <option value="Orienteeringg">Orienteering</option>
+            <option value="Archery">Archery</option>
+            <option value="Hillwalking">Hillwalking</option>
+
+
+            <label for="date">Select a Date:</label>
+            <input type="date" id="date" name="date" required>
+
+        </select>
+
+            <label for="participants">Number of Participants:</label>
+            <input type="number" id="participants" name="participants" min="1" max="20" required>
+            <label for="name">Name:</label>
+            <input type="text">
+            <label for="name">Email:</label>
+            <input type="text">
+            <label for="name">Phonr number:</label>
+            <input type="text">
+            
+
+            <!-- Submit Button -->
+            <button type="button" id="termsButton" class="terms-accept-button">Accept Terms and Conditions</button>
+            <p><a href="terms.html"> See terms and conditons here.</a></p>
+            <button type="submit">Submit Booking</button>
+            
+            </form>
+
+        </section>
+
+
+
+
+
+
+        <script src="scripts.js"> </script>
+
+
+        <footer>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="imagesfolder.html">Gallery</a></li>
+            </ul>
+            <p>Opening Hours: Mon-Sun 09:00-18:00</p>
+            <div class="developer">&copy;Fortus Computus Ltd </div>
+        </footer>
+
+    </body>
+</html>
